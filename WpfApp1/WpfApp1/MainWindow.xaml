@@ -1,0 +1,102 @@
+﻿<Window x:Class="WpfLab4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ЛР4: Панелі компонування" Height="400" Width="500">
+    <TabControl Margin="10">
+        <!-- Завдання 1 -->
+        <TabItem Header="Завдання 1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                    <Button Content="Привіт" Click="BtnHello_Click" Margin="5"/>
+                    <Button Content="До побачення" Click="BtnBye_Click" Margin="5"/>
+                </StackPanel>
+                <Label x:Name="lblStatus" Content="Початок роботи" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontSize="18" Grid.Row="1"/>
+            </Grid>
+        </TabItem>
+
+        <!-- Завдання 2 -->
+        <TabItem Header="Завдання 2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                    <Button Content="Сховати" Click="BtnHide2_Click" Margin="5"/>
+                    <Button Content="Показати" Click="BtnShow2_Click" Margin="5"/>
+                </StackPanel>
+                <TextBlock x:Name="txtBlock2" Text="Це текстове повідомлення" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Grid.Row="1"/>
+            </Grid>
+        </TabItem>
+
+        <!-- Завдання 3 -->
+        <TabItem Header="Завдання 3">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                    <Button Content="Приховати" Click="BtnHide3_Click" Margin="5"/>
+                    <Button Content="Показати" Click="BtnShow3_Click" Margin="5"/>
+                    <Button Content="Очистити" Click="BtnClear3_Click" Margin="5"/>
+                </StackPanel>
+                <TextBox x:Name="txtInput3" Text="Введіть текст..." 
+                         HorizontalAlignment="Center" Width="300" Margin="0,20"
+                         Grid.Row="1"/>
+            </Grid>
+        </TabItem>
+
+        <!-- Завдання 4 -->
+        <TabItem Header="Завдання 4">
+            <Grid>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="btnGame1" Content="Кнопка 1" Background="Red" Foreground="White" Click="BtnGame_Click" Margin="5"/>
+                    <Button x:Name="btnGame2" Content="Кнопка 2" Background="Green" Foreground="Black" Click="BtnGame_Click" Margin="5"/>
+                    <Button x:Name="btnGame3" Content="Кнопка 3" Background="Blue" Foreground="Yellow" Click="BtnGame_Click" Margin="5"/>
+                    <Button x:Name="btnGame4" Content="Кнопка 4" Background="Orange" Foreground="Black" Click="BtnGame_Click" Margin="5"/>
+                    <Button x:Name="btnGame5" Content="Кнопка 5" Background="Purple" Foreground="White" Click="BtnGame_Click" Margin="5"/>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+        <!-- Завдання 5 -->
+        <TabItem Header="Завдання 5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Перетворення: фунти → кілограми" HorizontalAlignment="Center" FontSize="16" Margin="0,10"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10" Grid.Row="1">
+                    <TextBlock Text="Фунти:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <TextBox x:Name="txtPounds" Width="100" Text="0" TextChanged="TxtPounds_TextChanged"/>
+                </StackPanel>
+                <TextBlock x:Name="lblKgResult" Text="0 кг" HorizontalAlignment="Center" FontSize="18" Grid.Row="2" Margin="0,10"/>
+            </Grid>
+        </TabItem>
+
+        <!-- Завдання 6 -->
+        <TabItem Header="Завдання 6">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <WrapPanel x:Name="wrapPanel6" Grid.Row="0" Margin="10"/>
+                <TextBlock Text="Кнопки займають 2/3 ширини вікна" HorizontalAlignment="Center" Grid.Row="1" Margin="0,5"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
