@@ -1,0 +1,14 @@
+D:\lb\Lb3\Lb3\bin\Debug\net8.0\Lb3.exe
+D:\lb\Lb3\Lb3\bin\Debug\net8.0\Lb3.deps.json
+D:\lb\Lb3\Lb3\bin\Debug\net8.0\Lb3.runtimeconfig.json
+D:\lb\Lb3\Lb3\bin\Debug\net8.0\Lb3.dll
+D:\lb\Lb3\Lb3\bin\Debug\net8.0\Lb3.pdb
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.GeneratedMSBuildEditorConfig.editorconfig
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.AssemblyInfoInputs.cache
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.AssemblyInfo.cs
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.csproj.CoreCompileInputs.cache
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.dll
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\refint\Lb3.dll
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.pdb
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\Lb3.genruntimeconfig.cache
+D:\lb\Lb3\Lb3\obj\Debug\net8.0\ref\Lb3.dll

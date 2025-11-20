@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Record>
+    <FullName>Іваненко Іван Іванович</FullName>
+    <HomePhone>380-55-111</HomePhone>
+    <WorkPhone>380-55-222</WorkPhone>
+    <MobilePhone>380-67-111-11-11</MobilePhone>
+    <Birthday>1999-04-15T00:00:00</Birthday>
+  </Record>
+  <Record>
+    <FullName>Петренко Олена Петрівна</FullName>
+    <HomePhone>380-55-333</HomePhone>
+    <WorkPhone>380-55-444</WorkPhone>
+    <MobilePhone>380-66-222-22-22</MobilePhone>
+    <Birthday>2001-07-03T00:00:00</Birthday>
+  </Record>
+  <Record>
+    <FullName>Сидоренко Андрій Степанович</FullName>
+    <HomePhone>380-55-555</HomePhone>
+    <WorkPhone>380-55-666</WorkPhone>
+    <MobilePhone>380-63-333-33-33</MobilePhone>
+    <Birthday>1995-05-20T00:00:00</Birthday>
+  </Record>
+  <Record>
+    <FullName>Мельник Марія Дмитрівна</FullName>
+    <HomePhone>380-55-777</HomePhone>
+    <WorkPhone>380-55-888</WorkPhone>
+    <MobilePhone>380-68-444-44-44</MobilePhone>
+    <Birthday>2000-12-01T00:00:00</Birthday>
+  </Record>
+  <Record>
+    <FullName>Коваль Віктор Ігорович</FullName>
+    <HomePhone>380-55-999</HomePhone>
+    <WorkPhone>380-55-000</WorkPhone>
+    <MobilePhone>380-93-555-55-55</MobilePhone>
+    <Birthday>1998-03-10T00:00:00</Birthday>
+  </Record>
+</ArrayOfRecord>
