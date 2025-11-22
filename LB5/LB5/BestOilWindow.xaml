@@ -1,0 +1,56 @@
+<Window x:Class="WpfLab5.BestOilWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BestOil – Автозаправка" Height="500" Width="600"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 1. Пальне -->
+        <GroupBox Header="Пальне" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,10">
+            <StackPanel>
+                <ComboBox x:Name="cmbFuel" SelectedIndex="0" SelectionChanged="CmbFuel_SelectionChanged">
+                    <ComboBoxItem Content="A95 – 45 грн/л" Tag="45"/>
+                    <ComboBoxItem Content="A92 – 40 грн/л" Tag="40"/>
+                    <ComboBoxItem Content="Дизель – 42 грн/л" Tag="42"/>
+                    <ComboBoxItem Content="Газ – 25 грн/л" Tag="25"/>
+                </ComboBox>
+                <StackPanel Orientation="Horizontal" Margin="0,10">
+                    <RadioButton x:Name="rbLiters" Content="Купити по літрах" IsChecked="True" Checked="RbMode_Checked" Margin="0,0,20,0"/>
+                    <RadioButton x:Name="rbMoney" Content="Купити по сумі" Checked="RbMode_Checked"/>
+                </StackPanel>
+                <Grid Margin="0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Кількість:" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtAmount" Grid.Column="1" Text="0" TextChanged="TxtAmount_TextChanged"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- 2. Міні-кафе -->
+        <GroupBox Header="Міні-кафе" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,0,10">
+            <StackPanel x:Name="stackCafe">
+                <!-- Динамічно створюємо у коді -->
+            </StackPanel>
+        </GroupBox>
+
+        <!-- 3. Підсумок -->
+        <GroupBox Header="До сплати" x:Name="gbTotal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+            <TextBlock x:Name="lblTotal" FontSize="18" HorizontalAlignment="Center" Text="0.00 грн"/>
+        </GroupBox>
+
+        <Button x:Name="btnCalculate" Content="Розрахувати" Grid.Row="3" Grid.ColumnSpan="2" Click="BtnCalculate_Click" Padding="10"/>
+    </Grid>
+</Window>

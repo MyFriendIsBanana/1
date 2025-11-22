@@ -1,0 +1,5 @@
+D:\lb\LB5\LB5\obj\Debug\LB5.csproj.AssemblyReference.cache
+D:\lb\LB5\LB5\obj\Debug\MainWindow.baml
+D:\lb\LB5\LB5\obj\Debug\MainWindow.g.cs
+D:\lb\LB5\LB5\obj\Debug\App.g.cs
+D:\lb\LB5\LB5\obj\Debug\LB5_MarkupCompile.cache
